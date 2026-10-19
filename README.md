@@ -7,6 +7,28 @@ experiments ask whether weather adds predictive value and whether fixed 30-day
 summaries improve on cumulative summaries. This is not a new large language
 model, a published paper, or a deployed agricultural decision service.
 
+## Find your way around
+
+The repository follows the research workflow, not a web-app layout:
+
+| Stage | Start with | What it does |
+|---|---|---|
+| Data audit | [`audit/audit_g2f.py`](audit/audit_g2f.py), [`preparation/README.md`](preparation/README.md) | Inspect source files, eligibility and source provenance. |
+| Cohort preparation | [`preparation/prepare_data.py`](preparation/prepare_data.py) | Build environment–hybrid targets and aligned trial inputs. |
+| Original benchmark | [`modeling/build_features.py`](modeling/build_features.py), [`modeling/run_experiments.py`](modeling/run_experiments.py) | Fit the initial 2024 Ridge/Extra Trees/CatBoost weather-window comparisons. |
+| Forward-year validation | [`modeling/run_rolling_pipeline.py`](modeling/run_rolling_pipeline.py), [`modeling/rolling_v1/PROTOCOL.md`](modeling/rolling_v1/PROTOCOL.md) | Repeat the locked comparison over test years 2020–2024. |
+| Weather representation | [`modeling/run_segmented_pipeline.py`](modeling/run_segmented_pipeline.py), [`modeling/segmented_v1/PROTOCOL.md`](modeling/segmented_v1/PROTOCOL.md) | Compare cumulative and 30-day-block weather summaries on matched cohorts. |
+| Stress/selection follow-up | [`modeling/stress_v1/RESULTS.md`](modeling/stress_v1/RESULTS.md), [`modeling/selection_v1/PROTOCOL.md`](modeling/selection_v1/PROTOCOL.md) | Test the VPD/heat extension, within-environment selection and error decomposition. |
+| Manuscript | [`reports/selection_paper/manuscript.md`](reports/selection_paper/manuscript.md), [`scripts/build_selection_paper.py`](scripts/build_selection_paper.py) | Present the current decision-focused synthesis and figures. |
+
+If you are reviewing the work rather than rerunning it, start with the result
+below, then read the [manuscript](reports/selection_paper/manuscript.md), the
+[rolling aggregate tables](modeling/rolling_v1/analysis/) and the
+[segmented aggregate tables](modeling/segmented_v1/analysis/). The source data,
+saved models and row-level predictions are intentionally **not** in GitHub;
+this public snapshot supports inspection and lightweight tests, not a
+one-command reconstruction of the historical model archive.
+
 ## Start here: selection-focused manuscript
 
 The current [English research draft](reports/selection_paper/manuscript.md) and
@@ -145,15 +167,28 @@ automatically include the later five-year study.
 
 ## Quick checks
 
-The publication preflight uses only the Python standard library:
+Clone the code and run the standard-library publication checks (no source data
+download or model fitting):
 
-    python scripts/check_publication.py --self-test
-    python scripts/check_publication.py
+```bash
+git clone https://github.com/lizhongyuanuk-lab/maize-weather-hybrid-selection.git
+cd maize-weather-hybrid-selection
+python3 scripts/check_publication.py --self-test
+python3 scripts/check_publication.py
+```
 
-With the scientific dependencies installed, synthetic validation runs without
-real model fitting or source-data download:
+For synthetic preparation/modeling tests, use Python 3.12 and install the
+[recorded direct dependencies](modeling/requirements.txt) into a separate
+environment first. These tests do not download the G2F dataset or fit the
+completed study's real models:
 
-    python modeling/validate_segmented_results.py --self-test
+```bash
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r modeling/requirements.txt
+.venv/bin/python -m unittest discover -s preparation -p 'test_*.py'
+.venv/bin/python -m unittest discover -s modeling -p 'test_*.py'
+.venv/bin/python modeling/validate_segmented_results.py --self-test
+```
 
 Full archive checks and the retained original training commands are in
 [Data and reproducibility](docs/DATA_AND_REPRODUCIBILITY.md). A fresh clone is
