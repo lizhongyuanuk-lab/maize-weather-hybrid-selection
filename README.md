@@ -133,6 +133,7 @@ true spatial holdout and prospective deployment safety were not evaluated.
 | [Reproduction guide](docs/DATA_AND_REPRODUCIBILITY.md) | Data, recorded dependencies, audit and training commands |
 | [Release checklist](docs/PUBLICATION_CHECKLIST.md) | Repository boundary, privacy, rights and publication decisions |
 | [Selection manuscript](reports/selection_paper/manuscript.md) | Current decision-focused paper draft and journal-style figures |
+| [Application summary](reports/ENGLISH_PROJECT_SUMMARY.md) | Short, evidence-bounded English project description |
 | [Code rights](docs/CODE_RIGHTS.md) | Public inspection without an original-code license |
 | [Research materials](reports/) | Briefs and historical supporting presentations; check each one's scope |
 
