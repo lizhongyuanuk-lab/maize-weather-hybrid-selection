@@ -1,0 +1,6 @@
+Year,model,window,candidate,params,validation_macro_rmse
+2020,Ridge,0,1,{'alpha': 10000.0},2.604770445952179
+2021,CatBoost,0,1,"{'iterations': 600, 'depth': 8, 'learning_rate': 0.05, 'l2_leaf_reg': 5, 'thread_count': 4, 'random_seed': 20261018, 'loss_function': 'RMSE', 'verbose': False, 'allow_writing_files': False}",2.204907936849258
+2022,CatBoost,90,1,"{'iterations': 600, 'depth': 8, 'learning_rate': 0.05, 'l2_leaf_reg': 5, 'thread_count': 4, 'random_seed': 20261018, 'loss_function': 'RMSE', 'verbose': False, 'allow_writing_files': False}",2.317672184008655
+2023,Ridge,0,0,{'alpha': 100.0},2.7413655351477284
+2024,CatBoost,120,1,"{'iterations': 600, 'depth': 8, 'learning_rate': 0.05, 'l2_leaf_reg': 5, 'thread_count': 4, 'random_seed': 20261018, 'loss_function': 'RMSE', 'verbose': False, 'allow_writing_files': False}",2.340316970122484

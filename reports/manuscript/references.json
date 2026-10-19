@@ -1,0 +1,261 @@
+{
+  "verified_on": "2026-10-18",
+  "scope": "Targeted primary-source bibliography; not a systematic review",
+  "references": [
+    {
+      "id": "chen2026",
+      "type": "article-journal",
+      "authors": [
+        "Qiuyue Chen",
+        "Jacob D. Washburn",
+        "Dayane Cristina Lima",
+        "Maria Cinta Romay",
+        "Joseph L. Gage",
+        "James B. Holland"
+      ],
+      "authors_complete": false,
+      "author_list_note": "First six authors followed by et al.; publisher has 35 authors",
+      "year": 2026,
+      "title": "Genomes to fields 2024 maize genotype by environment prediction competition",
+      "journal": "BMC Research Notes",
+      "volume": "19",
+      "article": "113",
+      "doi": "10.1186/s13104-026-07629-5",
+      "url": "https://link.springer.com/article/10.1186/s13104-026-07629-5",
+      "citation": "Chen, Q., Washburn, J. D., Lima, D. C., Romay, M. C., Gage, J. L., Holland, J. B., et al. (2026). Genomes to fields 2024 maize genotype by environment prediction competition. BMC Research Notes, 19, 113. https://doi.org/10.1186/s13104-026-07629-5"
+    },
+    {
+      "id": "g2f2025",
+      "type": "dataset",
+      "authors": [
+        "Genomes to Fields"
+      ],
+      "authors_complete": true,
+      "year": 2025,
+      "title": "Genomes to Fields 2024 Maize Genotype by Environment Prediction Competition",
+      "publisher": "CyVerse Data Commons",
+      "doi": "10.25739/78mn-4394",
+      "url": "https://dc.cyverse.org/dataset/genomes_to_fields_2024_maize_genotype_by_environment_prediction_competition",
+      "license": "Open Data Commons Public Domain Dedication and License (PDDL)",
+      "version_note": "Recommended citation year 2025. Original de_created_date 2025-02-21; current catalog Published 2026-04-08. Exact local input version requires file checksums.",
+      "citation": "Genomes to Fields. (2025). Genomes to Fields 2024 Maize Genotype by Environment Prediction Competition [Data set]. CyVerse Data Commons. https://doi.org/10.25739/78mn-4394"
+    },
+    {
+      "id": "geurts2006",
+      "type": "article-journal",
+      "authors": [
+        "Pierre Geurts",
+        "Damien Ernst",
+        "Louis Wehenkel"
+      ],
+      "authors_complete": true,
+      "year": 2006,
+      "title": "Extremely randomized trees",
+      "journal": "Machine Learning",
+      "volume": "63",
+      "pages": "3–42",
+      "doi": "10.1007/s10994-006-6226-1",
+      "url": "https://link.springer.com/article/10.1007/s10994-006-6226-1",
+      "citation": "Geurts, P., Ernst, D., & Wehenkel, L. (2006). Extremely randomized trees. Machine Learning, 63, 3–42. https://doi.org/10.1007/s10994-006-6226-1"
+    },
+    {
+      "id": "hoerl1970",
+      "type": "article-journal",
+      "authors": [
+        "Arthur E. Hoerl",
+        "Robert W. Kennard"
+      ],
+      "authors_complete": true,
+      "year": 1970,
+      "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "journal": "Technometrics",
+      "volume": "12",
+      "issue": "1",
+      "pages": "55–67",
+      "doi": "10.1080/00401706.1970.10488634",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00401706.1970.10488634",
+      "primary_paper_mirror": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+      "citation": "Hoerl, A. E., & Kennard, R. W. (1970). Ridge regression: Biased estimation for nonorthogonal problems. Technometrics, 12(1), 55–67. https://doi.org/10.1080/00401706.1970.10488634"
+    },
+    {
+      "id": "jarquin2014",
+      "type": "article-journal",
+      "authors": [
+        "Diego Jarquín",
+        "José Crossa",
+        "Xavier Lacaze",
+        "Philippe Du Cheyron",
+        "Joëlle Daucourt",
+        "Josiane Lorgeou",
+        "François Piraux",
+        "Laurent Guerreiro",
+        "Paulino Pérez",
+        "Mario Calus",
+        "Juan Burgueño",
+        "Gustavo de los Campos"
+      ],
+      "authors_complete": true,
+      "year": 2014,
+      "title": "A reaction norm model for genomic selection using high-dimensional genomic and environmental data",
+      "journal": "Theoretical and Applied Genetics",
+      "volume": "127",
+      "pages": "595–607",
+      "doi": "10.1007/s00122-013-2243-1",
+      "url": "https://link.springer.com/article/10.1007/s00122-013-2243-1",
+      "citation": "Jarquín, D., Crossa, J., Lacaze, X., Du Cheyron, P., Daucourt, J., Lorgeou, J., et al. (2014). A reaction norm model for genomic selection using high-dimensional genomic and environmental data. Theoretical and Applied Genetics, 127, 595–607. https://doi.org/10.1007/s00122-013-2243-1"
+    },
+    {
+      "id": "jarquin2020",
+      "type": "article-journal",
+      "authors": [
+        "Diego Jarquin",
+        "Natalia de Leon",
+        "Cinta Romay",
+        "Martin Bohn",
+        "Edward S. Buckler",
+        "Ignacio Ciampitti"
+      ],
+      "authors_complete": false,
+      "author_list_note": "First six authors followed by et al.; publisher has 33 authors",
+      "year": 2021,
+      "year_note": "Publisher suggested citation and publication date are 2021; volume 11 and DOI contain 2020. Stable internal key retained as jarquin2020.",
+      "title": "Utility of Climatic Information via Combining Ability Models to Improve Genomic Prediction for Yield Within the Genomes to Fields Maize Project",
+      "journal": "Frontiers in Genetics",
+      "volume": "11",
+      "article": "592769",
+      "doi": "10.3389/fgene.2020.592769",
+      "url": "https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2020.592769/full",
+      "citation": "Jarquin, D., de Leon, N., Romay, C., Bohn, M., Buckler, E. S., Ciampitti, I., et al. (2021). Utility of climatic information via combining ability models to improve genomic prediction for yield within the Genomes to Fields maize project. Frontiers in Genetics, 11, 592769. https://doi.org/10.3389/fgene.2020.592769"
+    },
+    {
+      "id": "leakage2023",
+      "type": "article-journal",
+      "authors": [
+        "Sayash Kapoor",
+        "Arvind Narayanan"
+      ],
+      "authors_complete": true,
+      "year": 2023,
+      "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+      "journal": "Patterns",
+      "volume": "4",
+      "issue": "9",
+      "article": "100804",
+      "doi": "10.1016/j.patter.2023.100804",
+      "url": "https://doi.org/10.1016/j.patter.2023.100804",
+      "author_preprint": "https://arxiv.org/abs/2207.07048",
+      "citation": "Kapoor, S., & Narayanan, A. (2023). Leakage and the reproducibility crisis in machine-learning-based science. Patterns, 4(9), 100804. https://doi.org/10.1016/j.patter.2023.100804"
+    },
+    {
+      "id": "owen2007",
+      "type": "article-journal",
+      "authors": [
+        "Art B. Owen"
+      ],
+      "authors_complete": true,
+      "year": 2007,
+      "title": "The pigeonhole bootstrap",
+      "journal": "The Annals of Applied Statistics",
+      "volume": "1",
+      "issue": "2",
+      "pages": "386–411",
+      "doi": "10.1214/07-AOAS122",
+      "url": "https://arxiv.org/abs/0712.1111",
+      "author_manuscript": "https://artowen.su.domains/reports/pbs.pdf",
+      "citation": "Owen, A. B. (2007). The pigeonhole bootstrap. The Annals of Applied Statistics, 1(2), 386–411. https://doi.org/10.1214/07-AOAS122"
+    },
+    {
+      "id": "prokhorenkova2018",
+      "type": "paper-conference",
+      "authors": [
+        "Liudmila Prokhorenkova",
+        "Gleb Gusev",
+        "Aleksandr Vorobev",
+        "Anna Veronika Dorogush",
+        "Andrey Gulin"
+      ],
+      "authors_complete": true,
+      "year": 2018,
+      "title": "CatBoost: unbiased boosting with categorical features",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "31",
+      "pages": "6638–6648",
+      "doi": null,
+      "url": "https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+      "metadata_url": "https://proceedings.neurips.cc/paper_files/paper/2018/file/14491b756b3a51daac41c24863285549-Metadata.json",
+      "citation": "Prokhorenkova, L., Gusev, G., Vorobev, A., Dorogush, A. V., & Gulin, A. (2018). CatBoost: unbiased boosting with categorical features. Advances in Neural Information Processing Systems, 31, 6638–6648. https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html"
+    },
+    {
+      "id": "roberts2017",
+      "type": "article-journal",
+      "authors": [
+        "David R. Roberts",
+        "Volker Bahn",
+        "Simone Ciuti",
+        "Mark S. Boyce",
+        "Jane Elith",
+        "Gurutzeta Guillera-Arroita",
+        "Severin Hauenstein",
+        "José J. Lahoz-Monfort",
+        "Boris Schröder",
+        "Wilfried Thuiller",
+        "David I. Warton",
+        "Brendan A. Wintle",
+        "Florian Hartig",
+        "Carsten F. Dormann"
+      ],
+      "authors_complete": true,
+      "year": 2017,
+      "title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+      "journal": "Ecography",
+      "volume": "40",
+      "issue": "8",
+      "pages": "913–929",
+      "doi": "10.1111/ecog.02881",
+      "url": "https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.02881",
+      "citation": "Roberts, D. R., Bahn, V., Ciuti, S., Boyce, M. S., Elith, J., Guillera-Arroita, G., et al. (2017). Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure. Ecography, 40(8), 913–929. https://doi.org/10.1111/ecog.02881"
+    },
+    {
+      "id": "rogers2022",
+      "type": "article-journal",
+      "authors": [
+        "Anna R. Rogers",
+        "James B. Holland"
+      ],
+      "authors_complete": true,
+      "year": 2022,
+      "title": "Environment-specific genomic prediction ability in maize using environmental covariates depends on environmental similarity to training data",
+      "journal": "G3 Genes|Genomes|Genetics",
+      "volume": "12",
+      "issue": "2",
+      "article": "jkab440",
+      "doi": "10.1093/g3journal/jkab440",
+      "url": "https://academic.oup.com/g3journal/article/12/2/jkab440/6486423",
+      "citation": "Rogers, A. R., & Holland, J. B. (2022). Environment-specific genomic prediction ability in maize using environmental covariates depends on environmental similarity to training data. G3 Genes|Genomes|Genetics, 12(2), jkab440. https://doi.org/10.1093/g3journal/jkab440"
+    },
+    {
+      "id": "westhues2021",
+      "type": "article-journal",
+      "authors": [
+        "Cathy C. Westhues",
+        "Gregory S. Mahone",
+        "Sofia da Silva",
+        "Patrick Thorwarth",
+        "Malthe Schmidt",
+        "Jan-Christoph Richter",
+        "Henner Simianer",
+        "Timothy M. Beissinger"
+      ],
+      "authors_complete": true,
+      "year": 2021,
+      "title": "Prediction of Maize Phenotypic Traits With Genomic and Environmental Predictors Using Gradient Boosting Frameworks",
+      "journal": "Frontiers in Plant Science",
+      "volume": "12",
+      "article": "699589",
+      "doi": "10.3389/fpls.2021.699589",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.699589/full",
+      "citation": "Westhues, C. C., Mahone, G. S., da Silva, S., Thorwarth, P., Schmidt, M., Richter, J.-C., et al. (2021). Prediction of maize phenotypic traits with genomic and environmental predictors using gradient boosting frameworks. Frontiers in Plant Science, 12, 699589. https://doi.org/10.3389/fpls.2021.699589"
+    }
+  ],
+  "reference_order": "Alphabetical by first author; long author lists use first six authors plus et al. in the rendered citation"
+}

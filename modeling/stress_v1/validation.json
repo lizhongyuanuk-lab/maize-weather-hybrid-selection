@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "n_scored_rows": 57673,
+  "n_environment_years": 129,
+  "n_years": 5,
+  "verified_locked_candidate_and_reference_hashes": true,
+  "verified_2024_raw_rmse_and_top20": true,
+  "max_2024_rmse_recalculation_error": 4.440892098500626e-16,
+  "max_2024_top20_recalculation_error": 8.326672684688674e-17,
+  "verified_gxe_prediction_hashes_and_annual_summary": true
+}

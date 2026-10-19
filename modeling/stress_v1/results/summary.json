@@ -1,0 +1,43 @@
+{
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "n_scored_rows": 57673,
+  "n_environment_years": 129,
+  "n_site_code_proxies": 31,
+  "retrospective_post_hoc": true,
+  "not_new_blind_confirmation": true,
+  "rmse": {
+    "year_equal_reference": 2.5149273783693045,
+    "year_equal_candidate": 2.5020141219141148,
+    "year_equal_delta": -0.012913256455189797,
+    "years_favoring_candidate": 4,
+    "year_block_ci95": [
+      -0.030205084560310125,
+      0.006636618311018541
+    ],
+    "crossed_year_site_ci95": [
+      -0.06280918494766097,
+      0.03382115352565017
+    ],
+    "relative_gain_percent": 0.5134643873320407
+  },
+  "top20_recall": {
+    "year_equal_reference": 0.2977069914666468,
+    "year_equal_candidate": 0.2913107674509915,
+    "year_equal_delta": -0.006396224015655394,
+    "years_favoring_candidate": 1,
+    "year_block_ci95": [
+      -0.013741512287507616,
+      -0.000184470261399893
+    ],
+    "crossed_year_site_ci95": [
+      -0.01799421028478577,
+      0.006138504142465365
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "status": "exploratory_post_hoc_diagnostic",
+  "n_scored_rows": 57673,
+  "n_environment_years": 129,
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "identity": "MSE = squared environment mean error + centered within-environment MSE",
+  "aggregation": "equal environments within year, then equal years",
+  "not_primary_metric": "Primary experiment uses mean RMSE, not decomposable MSE",
+  "contrasts": {
+    "W120_vs_W0": {
+      "bias2": {
+        "candidate_minus_base": -0.2577439415192174,
+        "annual_differences": [
+          0.1828067204022612,
+          -0.6356170004994013,
+          -0.15804464702126886,
+          -0.06153690358283237,
+          -0.6163278768948457
+        ],
+        "years_favoring_candidate": 4,
+        "year_block_ci95": [
+          -0.5323868803619526,
+          0.01689899732351776
+        ]
+      },
+      "within_mse": {
+        "candidate_minus_base": -0.01976526286644704,
+        "annual_differences": [
+          -0.008336873738396644,
+          -0.019510874644574905,
+          -0.006695361276807255,
+          -0.01502679395151052,
+          -0.04925641072094589
+        ],
+        "years_favoring_candidate": 5,
+        "year_block_ci95": [
+          -0.03512339610916184,
+          -0.009018252796383663
+        ]
+      },
+      "mse": {
+        "candidate_minus_base": -0.27750920438566473,
+        "annual_differences": [
+          0.17446984666386456,
+          -0.6551278751439771,
+          -0.16474000829807522,
+          -0.07656369753434422,
+          -0.6655842876157916
+        ],
+        "years_favoring_candidate": 4,
+        "year_block_ci95": [
+          -0.5612328667635225,
+          0.0062144579921930895
+        ]
+      },
+      "top20_recall": {
+        "candidate_minus_base": 0.010509746478525506,
+        "annual_differences": [
+          0.004000280117765653,
+          0.009327170290501063,
+          0.01383757330425639,
+          0.002257000107498741,
+          0.02312670857260568
+        ],
+        "years_favoring_candidate": 5,
+        "year_block_ci95": [
+          0.0043683461482059704,
+          0.01744359582796782
+        ],
+        "crossed_year_site_ci95": [
+          -0.003835219820323588,
+          0.028946147764071232
+        ]
+      },
+      "bias_component_share_of_point_mse_reduction": 0.9287761899278166
+    },
+    "stress_vs_W120": {
+      "bias2": {
+        "candidate_minus_base": -0.10809979612367941,
+        "annual_differences": [
+          -0.17065092260536652,
+          0.016331716564389254,
+          0.06587612545309884,
+          -0.07628975557501816,
+          -0.3757661444555005
+        ],
+        "years_favoring_candidate": 3,
+        "year_block_ci95": [
+          -0.2526970113454201,
+          0.017625185691991608
+        ]
+      },
+      "within_mse": {
+        "candidate_minus_base": 0.00353060289742535,
+        "annual_differences": [
+          0.0004258644500505504,
+          0.00835752245468191,
+          0.011310205674698981,
+          -0.016080543812650117,
+          0.013639965720345426
+        ],
+        "years_favoring_candidate": 1,
+        "year_block_ci95": [
+          -0.0068351602535108745,
+          0.011651573048954145
+        ]
+      },
+      "mse": {
+        "candidate_minus_base": -0.10456919322625424,
+        "annual_differences": [
+          -0.1702250581553164,
+          0.024689239019071607,
+          0.07718633112779649,
+          -0.09237029938766828,
+          -0.3621261787351546
+        ],
+        "years_favoring_candidate": 3,
+        "year_block_ci95": [
+          -0.24638287106834172,
+          0.022276168181213585
+        ]
+      },
+      "top20_recall": {
+        "candidate_minus_base": -0.006396224015655394,
+        "annual_differences": [
+          -0.0038906399939903913,
+          0.004125899311392622,
+          -0.011329033406852623,
+          -0.0026417549678971475,
+          -0.01824559102092943
+        ],
+        "years_favoring_candidate": 1,
+        "year_block_ci95": [
+          -0.013741512287507612,
+          -0.0001844702613998883
+        ],
+        "crossed_year_site_ci95": [
+          -0.01810217096480293,
+          0.005891664095877734
+        ]
+      },
+      "bias_component_share_of_point_mse_reduction": 1.033763317746806
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Year,representation,model,window,candidate,params,validation_macro_rmse,reused
+2020,cumulative,Ridge,0,1,{'alpha': 10000.0},2.604770445952179,
+2020,segmented,Ridge,0,1,{'alpha': 10000.0},2.604770445952179,True
+2021,cumulative,CatBoost,0,1,"{'iterations': 600, 'depth': 8, 'learning_rate': 0.05, 'l2_leaf_reg': 5, 'thread_count': 4, 'random_seed': 20261018, 'loss_function': 'RMSE', 'verbose': False, 'allow_writing_files': False}",2.204907936849258,
+2021,segmented,ExtraTrees,90,0,"{'n_estimators': 160, 'max_depth': 18, 'min_samples_leaf': 5, 'max_features': 0.8, 'n_jobs': 4, 'random_state': 20261018}",2.154141475717362,False
+2022,cumulative,CatBoost,90,1,"{'iterations': 600, 'depth': 8, 'learning_rate': 0.05, 'l2_leaf_reg': 5, 'thread_count': 4, 'random_seed': 20261018, 'loss_function': 'RMSE', 'verbose': False, 'allow_writing_files': False}",2.317672184008655,
+2022,segmented,CatBoost,0,1,"{'iterations': 600, 'depth': 8, 'learning_rate': 0.05, 'l2_leaf_reg': 5, 'thread_count': 4, 'random_seed': 20261018, 'loss_function': 'RMSE', 'verbose': False, 'allow_writing_files': False}",2.4112522782802284,True
+2023,cumulative,Ridge,0,0,{'alpha': 100.0},2.7413655351477284,
+2023,segmented,Ridge,0,0,{'alpha': 100.0},2.7413655351477284,True
+2024,cumulative,CatBoost,120,1,"{'iterations': 600, 'depth': 8, 'learning_rate': 0.05, 'l2_leaf_reg': 5, 'thread_count': 4, 'random_seed': 20261018, 'loss_function': 'RMSE', 'verbose': False, 'allow_writing_files': False}",2.340316970122484,
+2024,segmented,Ridge,0,0,{'alpha': 100.0},2.40181008457414,True

@@ -1,0 +1,15 @@
+{
+  "status": "DRAFT_RENDERED_NOT_SUBMITTED",
+  "output": "output/pdf/MAIZE_SELECTION_MANUSCRIPT_DRAFT.pdf",
+  "pages": 10,
+  "pdf_sha256": "92bf62ed4c5084b2369d38e162f7c7b4e08c0fb984c2fca1a52a807b097b53ea",
+  "manuscript_sha256": "fc85ae71327e9810ea7d82cd385a25875cf4e3d81fe939bda07ee3d13fbc21b6",
+  "source_sha256": {
+    "objective_summary": "fec2b548586628eced869501ede6db19c8f2760e2e6ce6c34f64deeb39b8139d",
+    "annual_components": "78eea704f62cb0919b62f43a08e1a96a0d866daad49f31ab0b57acb459a4c04a",
+    "stress_summary": "6582522b77dd94f4fcbdbc5f37cd63afbb62e0bf01087862993220a5134372fe",
+    "rolling_stability": "7883e24dffb295e213974501949bc8d7db19a34aa49f8720562f88d59275c0c9"
+  },
+  "text_checks": "PASS",
+  "visual_inspection": "PASS_10_PAGE_FINAL_TEXT_REVISION"
+}

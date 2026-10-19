@@ -1,0 +1,6 @@
+Year,n_scored,n_environments,n_site_codes,n_hybrids,n_training_samples,training_last_year,representation_pairs,new_final_fits
+2020,11298,25,24,1175,57681,2019,17,9
+2021,13615,27,27,1180,68979,2020,17,9
+2022,11783,28,28,549,82594,2021,17,9
+2023,11491,27,27,546,94377,2022,17,9
+2024,9486,22,22,1063,105868,2023,17,9

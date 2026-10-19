@@ -1,0 +1,30 @@
+{
+  "sampled_rows": 645,
+  "sampled_environment_years": 129,
+  "five_per_environment": true,
+  "pairwise_2024": {
+    "year": 2024,
+    "n_hybrids": 44,
+    "n_environments": 22,
+    "top_pc_chosen_after_shap_review": "PC002",
+    "pairs": [
+      {
+        "a": "heat_excess35_cday",
+        "b": "vpd_proxy_mean_kpa",
+        "mean_abs_pairwise_shap_mgha": 0.0
+      },
+      {
+        "a": "heat_excess35_cday",
+        "b": "PC002",
+        "mean_abs_pairwise_shap_mgha": 0.00018736567532630203
+      },
+      {
+        "a": "vpd_proxy_mean_kpa",
+        "b": "humidity_mean",
+        "mean_abs_pairwise_shap_mgha": 0.005813311047202285
+      }
+    ]
+  },
+  "interpretation": "post-hoc_model_diagnostic_not_validated_agronomic_or_causal_insight",
+  "paper_analogy": "Figure 4 importance; Figure 6 dependence; Figure 7 pairwise model interaction"
+}
