@@ -1,13 +1,47 @@
-# Summary
+# Application-ready research summary
 
-Maize yield prediction: the incremental value and temporal representation of weather
+## Short description
 
-- **Research question.** How much do 30/60/90/120-day post-planting weather observations improve maize yield prediction beyond genetic and static inputs? Does a fixed 30-day-block representation improve on cumulative weather summaries?
-- **Data and design.** The completed public G2F study evaluates 2020-2024 on 57,673 environment-hybrid observations across 129 environment-years and 31 released site codes, not 129 independent physical sites. Each fold trains before its validation year, selects among two preset candidates, freezes choices and refits before test scoring. Ridge, Extra Trees and CatBoost share the same cohort and five weather windows. W0 already contains 100 genetic principal components plus location/site and planting information.
-- **Weather increment.** For CatBoost, cumulative W120 reduced year-equal mean environment RMSE from 2.5332 to 2.5149 Mg/ha, a 0.72% reduction, with improvement in three of five years. The paired difference was -0.018 Mg/ha; its 95% crossed year/site-code sensitivity interval was [-0.213, +0.165]. A reliable general gain is not established. At W120, Ridge's mean RMSE rose 2.45%, while Extra Trees' fell 0.05%.
-- **Representation extension.** Segmented W120 RMSE was 2.6925 for Ridge, 2.6135 for Extra Trees and 2.6281 for CatBoost: 3.48%, 1.37% and 4.50% higher than their cumulative counterparts. No model passed the predefined exploratory improvement screen against both cumulative W120 and W0. No sufficient earlier window was declared under the existing within-year rule.
-- **Research difficulties addressed.** Training-only imputation/PCA and horizon clipping constrain leakage; paired samples and equal candidate budgets support fair comparisons; environment-level and year/site-code bootstrap analyses avoid treating hybrid rows as independent weather experiments. Static/genetic preprocessing and W0/W30 were reused exactly; the extension made 90 new candidate fits and 45 final refits.
-- **Contribution and limits.** The contribution is a reproducible comparison with explicit failure boundaries, not a new algorithm or a claim that weather lacks agronomic importance. The extensions are retrospective and exploratory, with only five years and overlapping training histories. Intervals exclude model-selection/refit uncertainty and are not multiplicity-adjusted. Real-time availability is unverified, site codes are proxies, and 571 unlabeled 2024 inputs remain unscored. Prospective external-year validation is the next useful test.
-- **Evidence and authorship.** Both numerical audits passed; all 45 new final models were replayed. Implementation was AI-assisted. Personal contributions must be described accurately; no publication or institutional partnership is implied.
+I investigated whether adding observed weather to a maize yield-prediction
+pipeline actually improves the breeding decision it is meant to support:
+selecting high-yielding hybrids **within a trial environment**. Using public
+Genomes to Fields data, I evaluated five forward-year test folds (2020–2024;
+57,673 scored environment–hybrid observations in 129 environment-years) and
+compared genetic/static baselines with weather-aware models. In the matched
+CatBoost comparison, 120 days of observed weather increased top-20% selection
+recall from 28.72% to 29.77%, but a crossed year/site-code sensitivity interval
+for the 1.05-point gain included zero. Most of the point-estimated reduction in
+squared yield error came from better prediction of environment means, rather
+than markedly better separation of hybrids within an environment. An
+exploratory VPD/heat extension slightly reduced RMSE while lowering selection
+recall. The central finding is methodological: **a lower yield RMSE is not, by
+itself, evidence of a better hybrid-selection model**.
 
-The [two-page research brief](RESEARCH_BRIEF.md) includes the three-model tables and reproducibility paths. Audited sources: `modeling/rolling_v1/analysis/cross_year_stability.csv`, `modeling/segmented_v1/analysis/cross_year_comparisons.csv`, and their bound `validation_checks.json` receipts. Data: G2F, DOI [10.25739/78mn-4394](https://doi.org/10.25739/78mn-4394).
+## What the project demonstrates
+
+- A leakage-conscious, chronological evaluation with preceding-year model
+  selection and matched held-out predictions.
+- Comparisons across Ridge, Extra Trees and CatBoost, multiple weather windows,
+  and an additional stress-feature test; both mixed and negative results remain
+  visible in the repository.
+- A selection-oriented metric and an exact decomposition of prediction error
+  into between-environment calibration and within-environment discrimination.
+- Environment/year-aware sensitivity analyses and separate computational
+  checks. SHAP is used to inspect fitted-model reliance, not to infer causality.
+
+## Boundaries to state honestly
+
+This is an independent, unpublished retrospective study, not an SCI paper or
+an institutional collaboration. The selection-focused question was developed
+after the original RMSE benchmark, so the result is exploratory. The weather
+features were observed after planting; pre-planting utility, a genuinely new
+physical-site test, and reliable future-selection improvement are unproven.
+Source data, row-level predictions and fitted models are not redistributed in
+the lightweight public code repository. Describe personal and AI-assisted
+contributions accurately rather than implying sole unaided authorship.
+
+Read the [current manuscript](selection_paper/manuscript.md), the
+[PDF draft](../output/pdf/MAIZE_SELECTION_MANUSCRIPT_DRAFT.pdf), and the
+[reproduction guide](../docs/DATA_AND_REPRODUCIBILITY.md) for the detailed
+methods, evidence and limitations. Data: G2F, DOI
+[10.25739/78mn-4394](https://doi.org/10.25739/78mn-4394).
